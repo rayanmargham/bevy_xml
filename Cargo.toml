@@ -1,0 +1,15 @@
+[package]
+name = "bevy_xml"
+version = "0.1.0"
+edition = "2021"
+keywords = ["bevy", "gamedev", "asset", "assets", "xml"]
+description = "An Sparrow SpriteSheet XML Parser for Bevy!"
+categories = ["game-development"]
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy = { version = "^0.10", default-features = false, features = ["bevy_asset", "bevy_sprite"] }
+serde = {version = "1.0.160", features = ["derive"]}
+serde-xml-rs = "0.6.0"
