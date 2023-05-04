@@ -6,7 +6,7 @@ keywords = ["bevy", "gamedev", "asset", "assets", "xml"]
 description = "An Sparrow SpriteSheet XML Parser for Bevy!"
 categories = ["game-development"]
 readme = "README.md"
-license-file = "LICENSE.txt"
+license-file = "LICENSE"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
