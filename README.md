@@ -41,14 +41,7 @@ fn your_startup_system(mut texture_atlases: ResMut<Assets<TextureAtlas>>, asset_
     }
 }
 
-// system
-fn update_frame_system(mut query: Query<(&mut SpriteXML, &mut TextureAtlasSprite, &mut Transform), With<SpriteXML>>)
-{
-    for (mut xml, mut sprite, mut trans) in query.iter_mut()
-    {
-        xml.get_next_frame(&mut sprite, &mut trans);
-    }
-}
+
 ```
 
 ## What this Crate gives you
