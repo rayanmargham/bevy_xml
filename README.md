@@ -12,6 +12,12 @@ Here below is some example code on how'd you use the crate:
 use bevy::prelude::*;
 use bevy_xml::*;
 
+fn main()
+{
+    app
+        .add_system(bevy_xml::tick_animations)
+        .run();
+}
 fn your_startup_system(mut texture_atlases: ResMut<Assets<TextureAtlas>>, asset_loader: Res<AssetServer>)
 {
     let bfs = texture_atlases.add(TextureAtlas::new_empty(asset_loader.load("images/bf.png"), Vec2::new(8192.0, 4096.0))); // handle
@@ -21,6 +27,10 @@ fn your_startup_system(mut texture_atlases: ResMut<Assets<TextureAtlas>>, asset_
     match xml {
         Some(c) =>
         {
+            c.add_anim_from_prefix("Epic Animation", false, 24); // anim name, is the animation looped?, fps
+            c.apply_offsets(); // applies inital offset
+            c.set_anim("Epic Animation", bf, true); // sets the current animation
+                    // anim name^  sprite^   ^ set the current frame to zero?
             commands.spawn(c);
         },
         None =>
@@ -43,7 +53,7 @@ fn update_frame_system(mut query: Query<(&mut SpriteXML, &mut TextureAtlasSprite
 
 ## What this Crate gives you
 
-This crate only gives you new() and get_next_frame(), offsets are by the crate. The animation system is for you to implement!
+This crate now has an animation system, support for 3D sprites and much more!
 
 ## Disclaimer!
 
