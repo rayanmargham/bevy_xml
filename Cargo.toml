@@ -15,4 +15,4 @@ license-file = "LICENSE"
 bevy = { version = "^0.10", default-features = false, features = ["bevy_asset", "bevy_sprite", "bevy_scene", "bevy_core_pipeline", "bevy_pbr", "bevy_render"] }
 serde = {version = "1.0.160", features = ["derive"]}
 serde-xml-rs = "0.6.0"
-bevy_sprite3d = {git = "https://github.com/rayanmargham/bevy_sprite3d"}
+bevy_sprite3d = "^2"
