@@ -1,4 +1,4 @@
-[![Bevy tracking](https://img.shields.io/badge/Bevy%20tracking-released%20version-lightblue)](https://bevyengine.org/learn/book/plugin-development/#main-branch-tracking) [![crates.io](https://img.shields.io/crates/v/bevy_xml)](https://crates.io/crates/bevy_xml) [![docs.rs](https://docs.rs/bevy_xml/badge.svg)](https://docs.rs/bevy_xml)
+[![Following released Bevy versions](https://img.shields.io/badge/Bevy%20tracking-released%20version-lightblue)](https://bevyengine.org/learn/book/plugin-development/#main-branch-tracking)
 
 # Bevy Sparrow XML Parser
 
